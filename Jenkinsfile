@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('Check Python') {
             steps {
-                bat 'python --version'
+                bat '"C:\\Users\\Nishitha\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" --version'
             }
         }
 
         stage('Run Application') {
             steps {
-                bat 'python app.py'
+                bat '"C:\\Users\\Nishitha\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" app.py'
             }
         }
 
         stage('Run Unit Tests') {
             steps {
-                bat 'python test_app.py'
+                bat '"C:\\Users\\Nishitha\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" test_app.py'
             }
         }
     }
